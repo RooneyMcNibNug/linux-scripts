@@ -1,2 +1,2 @@
 # linux-scripts
-Various scripts for desktop and server environments
+Some scripts I've created for linux desktop and server environments.
