@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### a quick script to wipe the metadata for all files in an entire directory. The Metadata Anonymisation Toolkit (https://mat.boum.org/)
+### a dirty .sh to wipe the metadata from all files in an entire directory. The Metadata Anonymisation Toolkit (https://mat.boum.org/)
 ### is required in order to run this script ($ apt-get install mat). Just plop this .sh in the dir of files you want metadata wiped from.
 
 GREEN='\033[0;32m'
