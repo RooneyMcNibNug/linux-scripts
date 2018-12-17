@@ -5,7 +5,11 @@
 
 GREEN='\033[0;32m'
 NO_COLOR='\033[0m'
-for y in *
+for y in ~/
 do
-        (echo -e "${GREEN}~ Displaying metadata found ~${NO_COLOR}" ; exiftool -f * ; echo -e "${GREEN}~ Running EXIF tool ~${NO_COLOR}" ; exiftool -all= -ext "*" "$y" ;)
+        (echo -e "${GREEN}~ Displaying metadata found ~${NO_COLOR}" ;
+         exiftool -f * ;
+         echo -e "${GREEN}~ Running EXIF tool ~${NO_COLOR}" ;
+         exiftool -all=  "*" "$y" ;
+        )
 done
