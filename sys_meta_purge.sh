@@ -14,7 +14,7 @@ echo $':::     ::    :: ::::     ::    ::   :::   :::: ::  ::   :::     ::    ::
 echo $' :      :    : :: ::      :      :   : :  :: :  :    :   : :     :      :   : :      :         : :  :    :   : :   :: :: :   : :: ::   '
 echo $''
 
-## Tools required: Metadata Anonymization Toolkit (mat), shred, bleachbit, 
+## Tools required: shred, ...
 
 for i in {160..164} {164..160} ; do echo -en "\e[38;5;${i}m#\e[0m" ; done ; echo; echo -e "\E[31m WARNING:" ; for i in {160..164} {164..160} ; do echo -en "\e[38;5;${i}m#\e[0m" ; done ; echo
 echo -e "\E[31mThis will permantly delete several system/user logs and session data."
