@@ -3,3 +3,4 @@
   2 set wrap
   3 set linebreak
   4 set noerrorbells
+  5 set visualbell
