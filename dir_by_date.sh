@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for each in *.mkv
+for each in *.*
 do
   date=$(date +%Y-%d-%m -r "$each");
   _DATES+=($date);
