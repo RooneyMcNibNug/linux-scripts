@@ -2,7 +2,7 @@
 
 for each in *.*
 do
-  date=$(date +%Y-%d-%m -r "$each");
+  date=$(date +%Y-%m-%d -r "$each");
   _DATES+=($date);
   FILES+=($each);
 done
@@ -15,6 +15,6 @@ for date in ${DATES[@]}; do
 done
 
 for i in  ${FILES[@]}; do
-  dest=$(date +%Y-%d-%m -r "$i")
+  dest=$(date +%Y-%m-%d -r "$i")
   mv $i $dest/$i
 done
