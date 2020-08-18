@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### a noob .sh to wipe the metadata from all files in an entire directory. The Metadata Anonymisation Toolkit (https://mat.boum.org/)
+### a noob .sh to wipe the metadata from all files in an entire directory. The Metadata Anonymisation Toolkit (https://0xacab.org/jvoisin/mat2)
 ### is required in order to run this script ($ apt-get install mat). Just plop this .sh in the dir of files you want metadata wiped from.
 
 GREEN='\033[0;32m'
