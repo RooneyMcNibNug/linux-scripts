@@ -9,7 +9,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # List of Applications
-TO_INSTALL="gcc gdb htop keepassx gtkhash tor proxychains nmap tcpdump firefox thunderbird gnupg ricochet irssi onionshare nano vim emacs gedit git geany libreoffice evince pdfgrep ocrmypdf scribus"
+TO_INSTALL="gcc gdb htop sysstat keepassx gtkhash tor proxychains nmap tcpdump firefox thunderbird gnupg ricochet irssi magic-wormhole onionshare nano vim emacs gedit git geany libreoffice evince pdfgrep ocrmypdf scribus"
 
 # Update and upgrade current packages
 dnf upgrade -y
