@@ -1,6 +1,7 @@
 #!/bin/bash
 
-### I use this script to automate the installation of a bunch of basic useful applications via dnf package manager on a fresh local Fedora install. Some of these applications are already pre-installed on desktop environments but I've added them anyways for those running from a minimal environment.
+### I use this script to automate the installation of a bunch of basic useful applications via dnf package manager on a fresh local Fedora install. 
+### Some of these applications are already pre-installed on desktop environments but I've added them anyways for those running from a minimal environment.
 
 # Initial check to ensure run as root
 if [[ $EUID -ne 0 ]]; then
