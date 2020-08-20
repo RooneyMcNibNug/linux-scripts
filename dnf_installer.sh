@@ -14,7 +14,7 @@ TO_INSTALL="gcc \
 gdb \
 htop \
 sysstat \
-keepassx \
+keepassxc \
 gtkhash \
 tor \
 proxychains \
