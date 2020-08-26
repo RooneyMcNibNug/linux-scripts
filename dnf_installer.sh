@@ -14,11 +14,13 @@ TO_INSTALL="gcc \
 gdb \
 htop \
 sysstat \
+wavemon \
 keepassxc \
 gtkhash \
 tor \
 proxychains \
-nmap tcpdump \
+nmap\
+tcpdump \
 firefox \
 thunderbird \
 gnupg \
