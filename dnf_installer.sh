@@ -38,6 +38,8 @@ libreoffice \
 evince \
 pdfgrep \
 ocrmypdf \
+ffmpeg \
+peek \
 scribus"
 
 # Update and upgrade current packages
