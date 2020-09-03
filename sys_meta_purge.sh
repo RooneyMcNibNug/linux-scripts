@@ -1,4 +1,4 @@
-\\#!/bin/bash
+#!/bin/bash
 
 echo -n $'\E[31m'
 echo $''
