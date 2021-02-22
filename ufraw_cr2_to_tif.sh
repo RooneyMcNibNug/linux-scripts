@@ -8,7 +8,7 @@ photo = ("*.CR2")
 
 for $photo in $cwd
 do
-  ufraw-batch $file --out-type=tif --wb=camera --black-point=auto --nozip
+  ufraw-batch $photo --out-type=tif --wb=camera --black-point=auto --nozip
 done
 
 # exiv2 -da rm *.TIFF
