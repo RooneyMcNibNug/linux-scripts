@@ -4,12 +4,13 @@
 # Run commented-out exiv2 line for privacy enhancements.
 
 
+photo = ("*.CR2")
 
-
-for file in $cwd
+for $photo in $cwd
 do
-  ufraw-batch $file --out-type=tif --wb=camera --black-point=auto --nozip *.CR2
-  # exiv2 -da rm $file
+  ufraw-batch $file --out-type=tif --wb=camera --black-point=auto --nozip
 done
+
+# exiv2 -da rm *.TIFF
 
 # optional: --exposure=0.33 --out-depth=8
