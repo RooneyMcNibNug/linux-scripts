@@ -19,7 +19,7 @@ keepassxc \
 gtkhash \
 tor \
 proxychains \
-nmap\
+nmap \
 tcpdump \
 firefox \
 thunderbird \
@@ -38,7 +38,6 @@ libreoffice \
 evince \
 pdfgrep \
 ocrmypdf \
-ffmpeg \
 peek \
 scribus"
 
