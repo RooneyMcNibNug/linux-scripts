@@ -43,22 +43,44 @@ ocrmypdf \
 peek \
 scribus"
 
+echo "~ Upgrading current packages via dnf.. ~"
+echo ""
 # Update and upgrade current packages
 dnf upgrade -y
+
+echo ""
+echo "~ Finished upgrading. ~"
+echo "~ Installing new packages via dnf.. ~"
+echo ""
 
 # Install list of applications
 dnf install -y $TO_INSTALL
 
 echo ""
 echo "~ Finished installing. ~"
-echo "~ Cleaning.. ~"
+echo "~ Cleaning dnf.. ~"
 echo ""
 
 # Delete cached dnf info
 dnf clean all
 
 echo "~ Finished cleaning. ~"
+echo "~ Cloning git repos.. ~"
 echo ""
+
+git clone https://github.com/RooneyMcNibNug/pihole-stuff && \
+git clone https://github.com/aboul3la/Sublist3r.git && \
+git clone https://github.com/wustho/epr && \
+git clone https://github.com/jufabeck2202/localpdfmerger && \
+git clone https://github.com/asciimoo/wuzz && \
+git clone https://github.com/netspooky/pdiff && \
+git clone https://github.com/firstlookmedia/dangerzone && \
+git clone https://github.com/svenstaro/miniserve && \
+git clone https://github.com/SoptikHa2/desed
+
+echo "~ Finished cloning. ~"
+echo ""
+
 echo "
 
  ________________________
