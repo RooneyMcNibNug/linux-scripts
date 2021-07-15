@@ -21,6 +21,8 @@ tor \
 proxychains \
 nmap \
 tcpdump \
+ccrypt \
+tomb \
 firefox \
 thunderbird \
 gnupg \
