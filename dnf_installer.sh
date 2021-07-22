@@ -41,7 +41,8 @@ evince \
 pdfgrep \
 ocrmypdf \
 peek \
-scribus"
+scribus \
+ifuse"
 
 echo "~ Upgrading current packages via dnf.. ~"
 echo ""
