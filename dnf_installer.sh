@@ -33,6 +33,7 @@ onionshare \
 nano \
 vim \
 emacs \
+peek \
 gedit \
 git \
 geany \
