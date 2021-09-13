@@ -37,6 +37,7 @@ peek \
 gedit \
 git \
 geany \
+idle3 \
 libreoffice \
 evince \
 pdfgrep \
