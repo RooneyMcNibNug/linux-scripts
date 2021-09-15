@@ -3,7 +3,7 @@
 ## Quick script to get cpu temp on something like a Raspberry Pi
 ## Takes CPU temp in millicelsius by default, but converted to standard celsius
 ## Outputs every one second
-## Designed to work not just with RaspbianOS, but other arm64/armfh OSes as well
+## Designed to work not just with Raspberry Pi OS, but other arm64/armfh OSes as well
 
 while true;
 do
