@@ -2,6 +2,7 @@
 
 ### I use this script to automate the installation of a bunch of basic useful applications via dnf package manager on a fresh local Fedora install. 
 ### Some of these applications are already pre-installed on desktop environments but I've added them anyways for those running from a minimal environment.
+### NOTE: This is best to run from wherever you want the git repos to be cloned to (ex: run this script from /home/<user>/Documents
 
 # Initial check to ensure run as root
 if [[ $EUID -ne 0 ]]; then
