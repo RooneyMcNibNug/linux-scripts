@@ -3,7 +3,7 @@
 ## Do you use VLC?
 #
 ## Well, let Python and VLC decide what you should watch right now!
-## You can just change the directory paths with wildcard file extensions within "project_files" to wherever
+## You can just change the directory paths with wildcard file extensions within "files" to wherever
 ## you have things stored at the moment.
 #
 ## Stop browsing through all your shit and just watch something already!
