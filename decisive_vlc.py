@@ -12,7 +12,7 @@ import glob
 import random
 import subprocess
 
-project_files = glob.glob('/media/**/*.mp4') + glob.glob('/media/**/*.mkv') + glob.glob('/media/**/*.avi')
+files = glob.glob('/media/**/*.mp4') + glob.glob('/media/**/*.mkv') + glob.glob('/media/**/*.avi')
 
-play = random.choice(project_files)
+play = random.choice(files)
 subprocess.run(["vlc", play, "–fullscreen"])
