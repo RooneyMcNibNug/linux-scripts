@@ -83,6 +83,14 @@ git clone https://github.com/svenstaro/miniserve && \
 git clone https://github.com/SoptikHa2/desed
 
 echo "~ Finished cloning. ~"
+echo "~ Installing Rust (rustup).. ~"
+echo ""
+
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+source $HOME/.cargo/env
+rustup --version
+
+echo "~ Finished installing. ~"
 echo ""
 
 echo "
