@@ -45,6 +45,7 @@ pdfgrep \
 ocrmypdf \
 peek \
 scribus \
+nvme-cli \
 ifuse"
 
 echo "~ Upgrading current packages via dnf.. ~"
