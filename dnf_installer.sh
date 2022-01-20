@@ -15,6 +15,7 @@ TO_INSTALL="gcc \
 gdb \
 htop \
 sysstat \
+sqlite3 \
 wavemon \
 keepassxc \
 gtkhash \
