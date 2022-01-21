@@ -64,6 +64,15 @@ dnf install -y $TO_INSTALL
 
 echo ""
 echo "~ Finished installing. ~"
+
+echo ""
+echo "~ Installing MariDB/MySQL Toolset.. ~"
+echo ""
+
+# Install tools listed at https://mariadb.com/kb/en/mariadb-package-repository-setup-and-usage/
+curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash && sudo apt-get install -y mariadb-server mariadb-client mariadb-backup
+
+echo "~ Finished installing. ~"
 echo "~ Cleaning dnf.. ~"
 echo ""
 
