@@ -15,7 +15,6 @@ TO_INSTALL="gcc \
 gdb \
 htop \
 sysstat \
-sqlite3 \
 wavemon \
 keepassxc \
 gtkhash \
@@ -47,7 +46,8 @@ ocrmypdf \
 peek \
 scribus \
 nvme-cli \
-ifuse"
+ifuse \
+dnf-plugins-core"
 
 echo "~ Upgrading current packages via dnf.. ~"
 echo ""
@@ -71,6 +71,16 @@ echo ""
 
 # Install tools listed at https://mariadb.com/kb/en/mariadb-package-repository-setup-and-usage/
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash && sudo apt-get install -y mariadb-server mariadb-client mariadb-backup
+
+echo "~ Finished installing. ~"
+
+echo ""
+echo "~ Installing Terraform.. ~"
+echo ""
+
+# Install HashiCorp repo then Terraform
+dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+sudo dnf -y install terraform
 
 echo "~ Finished installing. ~"
 echo "~ Cleaning dnf.. ~"
