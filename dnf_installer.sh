@@ -34,6 +34,7 @@ onionshare \
 nano \
 vim \
 emacs \
+podman \
 peek \
 gedit \
 git \
