@@ -18,7 +18,7 @@ echo $''
 
 for i in {160..164} {164..160} ; do echo -en "\e[38;5;${i}m#\e[0m" ; done ; echo; echo -e "\E[31m WARNING:" ; for i in {160..164} {164..160} ; do echo -en "\e[38;5;${i}m#\e[0m" ; done ; echo
 echo -e "\E[31mThis will permantly delete several system/user logs and session data."
-echo -e "\E[31mPlease make sure you review the code before running and comment out unwanted jobs."
+echo -e "\E[31mPlease make sure you review the code before running and uncomment/comment out wanted/unwanted jobs."
 echo -e "\E[31mThis script needs to run as root."
 
 read -p "Press enter to continue."
@@ -94,6 +94,11 @@ echo -e "[i] Clearing dmesg..."
 # dmesg -c
 echo "Done."
 
+echo -e "[i] Clearing syslog..."
+# truncate -s 0 /var/log/syslog
+# history -c
+echo "Done."
+
 echo -e "[i] Emptying Trash..."
 # truncate -s 0 ~/.local/share/Trash/files 
 # truncate -s 0~/.local/share/Trash/info
@@ -103,3 +108,5 @@ echo -e "[i] Clearing bash history"
 # truncate -s 0 /home/$USER/.bash_history
 # history -c
 echo "Done."
+
+echo -e "~~~ All jobs complete! ~~~"
