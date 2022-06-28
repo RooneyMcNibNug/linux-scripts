@@ -91,12 +91,11 @@ echo -e "[i] Clearing USB cache buffer..."
 echo "Done."
 
 echo -e "[i] Clearing dmesg..."
-# dmesg -c
+# truncate -s 0 /var/log/dmesg
 echo "Done."
 
 echo -e "[i] Clearing syslog..."
 # truncate -s 0 /var/log/syslog
-# history -c
 echo "Done."
 
 echo -e "[i] Emptying Trash..."
