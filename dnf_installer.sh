@@ -49,6 +49,8 @@ peek \
 scribus \
 nvme-cli \
 ifuse \
+the_silver_searcher \
+syncthing \
 dnf-plugins-core"
 
 echo "~ Upgrading current packages via dnf.. ~"
