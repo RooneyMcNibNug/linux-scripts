@@ -65,10 +65,10 @@ gsettings set org.gnome.Terminal.Legacy.Keybindings next-tab '<Control>Page_Down
 gsettings set org.gnome.Terminal.Legacy.Keybindings paste '<Control>v'
 
 # PGP settings
-gsettings set org.gnome.crypto.pgp ascii-armor true
-gsettings set org.gnome.crypto.pgp encrypt-to-self true
-gsettings set org.gnome.crypto.pgp keyservers ['ldap://keyserver.pgp.com', 'hkps://keys.openpgp.org', 'hkps://pgp.mit.edu']
-gsettings set org.gnome.crypto.pgp sort-recipients-by 'name'
+#gsettings set org.gnome.crypto.pgp ascii-armor true
+#gsettings set org.gnome.crypto.pgp encrypt-to-self true
+#gsettings set org.gnome.crypto.pgp keyservers ['ldap://keyserver.pgp.com', 'hkps://keys.openpgp.org', 'hkps://pgp.mit.edu']
+#gsettings set org.gnome.crypto.pgp sort-recipients-by 'name'
 
 # Optional output of all yoru current gnome settings
 #gsettings list-recursively
