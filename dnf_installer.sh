@@ -13,7 +13,7 @@ fi
 # List of Applications
 TO_INSTALL="gcc \
 gdb \
-htop \
+btop \
 sysstat \
 wavemon \
 keepassxc \
