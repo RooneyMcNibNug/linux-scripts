@@ -10,12 +10,15 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+# Path for git clones
+clonepath=/home/user/Documents
+
 # List of Applications
 TO_INSTALL="gcc \
 gdb \
+curl \
 btop \
 sysstat \
-wavemon \
 keepassxc \
 gtkhash \
 tor \
@@ -23,11 +26,11 @@ proxychains \
 nmap \
 tcpdump \
 ccrypt \
+age \
 tomb \
 firefox \
 thunderbird \
 gnupg \
-ricochet \
 irssi \
 magic-wormhole \
 onionshare \
@@ -45,6 +48,8 @@ libreoffice \
 evince \
 pdfgrep \
 ocrmypdf \
+mpv \
+audacious \
 peek \
 scribus \
 nvme-cli \
@@ -97,15 +102,14 @@ echo "~ Finished cleaning. ~"
 echo "~ Cloning git repos.. ~"
 echo ""
 
-git clone https://github.com/RooneyMcNibNug/pihole-stuff && \
-git clone https://github.com/aboul3la/Sublist3r.git && \
-git clone https://github.com/wustho/epr && \
-git clone https://github.com/jufabeck2202/localpdfmerger && \
-git clone https://github.com/asciimoo/wuzz && \
-git clone https://github.com/netspooky/pdiff && \
-git clone https://github.com/firstlookmedia/dangerzone && \
-git clone https://github.com/svenstaro/miniserve && \
-git clone https://github.com/SoptikHa2/desed
+git clone https://github.com/RooneyMcNibNug/pihole-stuff $clonepath && \
+git clone https://github.com/wustho/epr $clonepath && \
+git clone https://github.com/jufabeck2202/localpdfmerger $clonepath && \
+git clone https://github.com/asciimoo/wuzz $clonepath && \
+git clone https://github.com/netspooky/pdiff $clonepath && \
+git clone https://github.com/firstlookmedia/dangerzone $clonepath && \
+git clone https://github.com/svenstaro/miniserve $clonepath && \
+git clone https://github.com/SoptikHa2/desed $clonepath
 
 echo "~ Finished cloning. ~"
 echo "~ Installing Rust (rustup).. ~"
