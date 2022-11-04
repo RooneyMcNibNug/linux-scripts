@@ -109,7 +109,8 @@ git clone https://github.com/asciimoo/wuzz $clonepath && \
 git clone https://github.com/netspooky/pdiff $clonepath && \
 git clone https://github.com/firstlookmedia/dangerzone $clonepath && \
 git clone https://github.com/svenstaro/miniserve $clonepath && \
-git clone https://github.com/SoptikHa2/desed $clonepath
+git clone https://github.com/SoptikHa2/desed $clonepath \
+git clone https://github.com/findomain/findomain.git $clonepath
 
 echo "~ Finished cloning. ~"
 echo "~ Installing Rust (rustup).. ~"
@@ -118,6 +119,14 @@ echo ""
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 rustup --version
+
+echo "~ Finished installing. ~"
+echo "~ Installing Findomain (enumerator).. ~"
+
+cd $clonepath/findomain
+cargo build --release
+sudo cp target/release/findomain /usr/bin/
+findomain --version
 
 echo "~ Finished installing. ~"
 echo ""
