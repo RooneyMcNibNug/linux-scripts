@@ -48,6 +48,7 @@ libreoffice \
 evince \
 pdfgrep \
 ocrmypdf \
+easyeffects \
 mpv \
 audacious \
 peek \
