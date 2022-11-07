@@ -57,6 +57,7 @@ nvme-cli \
 ifuse \
 the_silver_searcher \
 syncthing \
+qflipper \
 dnf-plugins-core"
 
 echo "~ Upgrading current packages via dnf.. ~"
