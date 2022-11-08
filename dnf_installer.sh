@@ -89,6 +89,7 @@ flatpak install -y flathub cc.arduino.arduinoide
 flatpak install -y flathub com.visualstudio.code
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
+flatpak install -y flathub com.makemkv.MakeMKV
 
 echo ""
 echo "~ Finished installing. ~"
