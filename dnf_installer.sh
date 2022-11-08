@@ -75,8 +75,18 @@ dnf install -y $TO_INSTALL
 
 echo ""
 echo "~ Finished installing. ~"
+echo "~ Installing new flatpak apps.. ~"
+echo ""
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub org.signal.Signal
+flatpak install -y flathub cc.arduino.arduinoide
+flatpak install -y flathub com.visualstudio.code
+flatpak install -y flathub org.duckstation.DuckStation
+flatpak install -y flathub com.mojang.Minecraft
 
 echo ""
+echo "~ Finished installing. ~"
 echo "~ Installing MariDB/MySQL Toolset.. ~"
 echo ""
 
