@@ -73,6 +73,11 @@ echo ""
 # Install list of applications
 dnf install -y $TO_INSTALL
 
+# Install extra packages for multimedia applications
+dnf groupinstall multimedia -y
+dnf groupupdate multimedia -y
+dnf groupupdate sound-and-video -y
+
 echo ""
 echo "~ Finished installing. ~"
 echo "~ Installing new flatpak apps.. ~"
