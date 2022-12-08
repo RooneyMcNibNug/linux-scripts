@@ -18,6 +18,7 @@ TO_INSTALL="gcc \
 gdb \
 curl \
 btop \
+ncdu \
 sysstat \
 keepassxc \
 gtkhash \
