@@ -23,17 +23,14 @@ sysstat \
 keepassxc \
 gtkhash \
 tor \
-proxychains \
 nmap \
 tcpdump \
 ccrypt \
 age \
-tomb \
 firefox \
 thunderbird \
 gnupg \
 irssi \
-magic-wormhole \
 onionshare \
 nano \
 vim \
