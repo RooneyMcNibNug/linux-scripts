@@ -69,7 +69,7 @@ echo "~ Installing new packages via dnf.. ~"
 echo ""
 
 # Install list of applications
-dnf install -y $TO_INSTALL
+dnf install -y $TO_INSTALL --skip-broken
 
 # Install extra packages for multimedia applications
 dnf groupinstall multimedia -y
