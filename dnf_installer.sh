@@ -139,7 +139,9 @@ rustup --version
 echo "~ Finished installing. ~"
 echo "~ Installing Findomain (enumerator).. ~"
 
-cd $clonepath/findomain
+cd $clonepath
+git clone https://github.com/findomain/findomain.git
+cd findomain
 cargo build --release
 sudo cp target/release/findomain /usr/bin/
 findomain --version
