@@ -95,11 +95,17 @@ echo "~ Installing MariDB/MySQL Toolset.. ~"
 echo ""
 
 # Install tools listed at https://mariadb.com/kb/en/mariadb-package-repository-setup-and-usage/
+cd $clonepath
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash && sudo apt-get install -y mariadb-server mariadb-client mariadb-backup
 
 echo "~ Finished installing. ~"
-
+echo "~ Installing dbeaver.. ~"
 echo ""
+
+wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
+sudo dnf -y install ./dbeaver-ce-latest-stable.x86_64.rpm --skip-broken
+
+echo "~ Finished installing. ~"
 echo "~ Installing Terraform.. ~"
 echo ""
 
@@ -126,7 +132,6 @@ git clone https://github.com/netspooky/pdiff $clonepath && \
 git clone https://github.com/firstlookmedia/dangerzone $clonepath && \
 git clone https://github.com/svenstaro/miniserve $clonepath && \
 git clone https://github.com/SoptikHa2/desed $clonepath \
-git clone https://github.com/findomain/findomain.git $clonepath
 
 echo "~ Finished cloning. ~"
 echo "~ Installing Rust (rustup).. ~"
@@ -150,8 +155,8 @@ echo "~ Finished installing. ~"
 echo "~ Downloading Tor Browser.. ~"
 
 cd $clonepath
-wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux32-12.0_ALL.tar.xz
-wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux32-12.0_ALL.tar.xz.asc
+wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz
+wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
 
 echo "~ Finished downloading. ~"
