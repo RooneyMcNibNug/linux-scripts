@@ -82,8 +82,16 @@ dnf groupupdate sound-and-video -y
 
 echo ""
 echo "~ Finished installing. ~"
-echo "~ Installing new flatpak apps.. ~"
+echo "~ Installing magic-wormhole.. ~"
 echo ""
+
+pip3 install magic-wormhole
+
+echo ""
+echo "~ Finished installing. ~"
+echo "~ Installing flatpak apps.. ~"
+echo ""
+
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.signal.Signal
@@ -102,6 +110,7 @@ echo ""
 cd $clonepath
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash && sudo apt-get install -y mariadb-server mariadb-client mariadb-backup
 
+echo ""
 echo "~ Finished installing. ~"
 echo "~ Installing dbeaver.. ~"
 echo ""
@@ -109,6 +118,7 @@ echo ""
 wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
 sudo dnf -y install ./dbeaver-ce-latest-stable.x86_64.rpm --skip-broken
 
+echo ""
 echo "~ Finished installing. ~"
 echo "~ Installing Terraform.. ~"
 echo ""
@@ -117,6 +127,7 @@ echo ""
 dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
 sudo dnf -y install terraform
 
+echo ""
 echo "~ Finished installing. ~"
 echo "~ Cleaning dnf.. ~"
 echo ""
@@ -124,6 +135,7 @@ echo ""
 # Delete cached dnf info
 dnf clean all
 
+echo ""
 echo "~ Finished cleaning. ~"
 echo "~ Cloning git repos.. ~"
 echo ""
@@ -138,6 +150,7 @@ git clone https://github.com/firstlookmedia/dangerzone && chown -R $user dangerz
 git clone https://github.com/svenstaro/miniserve && chown -R $user miniserve && \
 git clone https://github.com/SoptikHa2/desed && chown -R $user desed \
 
+echo ""
 echo "~ Finished cloning. ~"
 echo "~ Installing Rust (rustup).. ~"
 echo ""
@@ -146,8 +159,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 rustup --version
 
+echo ""
 echo "~ Finished installing. ~"
 echo "~ Installing Findomain (enumerator).. ~"
+echo ""
 
 cd $clonepath
 git clone https://github.com/findomain/findomain.git
@@ -157,8 +172,10 @@ cargo build --release
 sudo cp target/release/findomain /usr/bin/
 findomain --version
 
+echo ""
 echo "~ Finished installing. ~"
 echo "~ Downloading Tor Browser.. ~"
+echo ""
 
 cd $clonepath
 wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz
@@ -166,8 +183,8 @@ wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.ta
 tar xvf tor-browser-linux*.tar.xz
 chown -R $user tor-browser-linux*
 
+echo ""
 echo "~ Finished downloading. ~"
-
 echo "
 
  ________________________
