@@ -145,7 +145,14 @@ sudo cp target/release/findomain /usr/bin/
 findomain --version
 
 echo "~ Finished installing. ~"
-echo ""
+echo "~ Downloading Tor Browser.. ~"
+
+cd $clonepath
+wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux32-12.0_ALL.tar.xz
+wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux32-12.0_ALL.tar.xz.asc
+tar xvf tor-browser-linux*.tar.xz
+
+echo "~ Finished downloading. ~"
 
 echo "
 
