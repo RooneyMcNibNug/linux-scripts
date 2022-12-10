@@ -164,7 +164,7 @@ cd $clonepath
 wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz
 wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
-&& chown -R $user tor-browser-linux*
+chown -R $user tor-browser-linux*
 
 echo "~ Finished downloading. ~"
 
