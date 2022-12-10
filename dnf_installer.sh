@@ -54,6 +54,7 @@ scribus \
 nvme-cli \
 ifuse \
 the_silver_searcher \
+rsync \
 syncthing \
 qflipper \
 dnf-plugins-core"
