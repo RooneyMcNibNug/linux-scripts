@@ -10,7 +10,10 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+## PLEASE CHECK THE FOLLOWING VARIABLES BEFORE RUNNING:
+
 # Path for git clones
+user=user # put your username here!
 clonepath=/home/user/Documents
 
 # List of Applications
@@ -125,14 +128,15 @@ echo "~ Finished cleaning. ~"
 echo "~ Cloning git repos.. ~"
 echo ""
 
-git clone https://github.com/RooneyMcNibNug/pihole-stuff $clonepath && \
-git clone https://github.com/wustho/epr $clonepath && \
-git clone https://github.com/jufabeck2202/localpdfmerger $clonepath && \
-git clone https://github.com/asciimoo/wuzz $clonepath && \
-git clone https://github.com/netspooky/pdiff $clonepath && \
-git clone https://github.com/firstlookmedia/dangerzone $clonepath && \
-git clone https://github.com/svenstaro/miniserve $clonepath && \
-git clone https://github.com/SoptikHa2/desed $clonepath \
+cd $clonepath
+git clone https://github.com/RooneyMcNibNug/pihole-stuff && chown -R $user pihole-stuff && \
+git clone https://github.com/wustho/epr && chown -R $user epr && \
+git clone https://github.com/jufabeck2202/localpdfmerger && chown -R $user localpdfmerger && \
+git clone https://github.com/asciimoo/wuzz && chown -R $user wuzz && \
+git clone https://github.com/netspooky/pdiff && chown -R $user pdiff && \
+git clone https://github.com/firstlookmedia/dangerzone && chown -R $user dangerzone && \
+git clone https://github.com/svenstaro/miniserve && chown -R $user miniserve && \
+git clone https://github.com/SoptikHa2/desed && chown -R $user desed \
 
 echo "~ Finished cloning. ~"
 echo "~ Installing Rust (rustup).. ~"
@@ -147,6 +151,7 @@ echo "~ Installing Findomain (enumerator).. ~"
 
 cd $clonepath
 git clone https://github.com/findomain/findomain.git
+chown -R $user findomain
 cd findomain
 cargo build --release
 sudo cp target/release/findomain /usr/bin/
@@ -159,6 +164,7 @@ cd $clonepath
 wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz
 wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
+&& chown -R $user tor-browser-linux*
 
 echo "~ Finished downloading. ~"
 
