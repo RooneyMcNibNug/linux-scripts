@@ -26,6 +26,7 @@ sysstat \
 keepassxc \
 gtkhash \
 tor \
+proxychains-ng \
 nmap \
 tcpdump \
 ccrypt \
@@ -174,11 +175,23 @@ findomain --version
 
 echo ""
 echo "~ Finished installing. ~"
+echo "~ Installing tomb (Dyne).. ~"
+echo ""
+
+cd $clonepath
+wget https://files.dyne.org/tomb/Tomb-2.9.tar.gz # check for version changes -> https://files.dyne.org/tomb/
+tar xvfz Tomb-2.9.tar.gz
+chown -R $user Tomb-2.9
+cd Tomb-2.9
+sudo make install
+
+echo ""
+echo "~ Finished installing. ~"
 echo "~ Downloading Tor Browser.. ~"
 echo ""
 
 cd $clonepath
-wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz
+wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz # check for version changes -> https://dist.torproject.org/torbrowser/
 wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
 chown -R $user tor-browser-linux*
