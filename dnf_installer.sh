@@ -56,6 +56,7 @@ audacious \
 peek \
 scribus \
 nvme-cli \
+vagrant \
 ifuse \
 the_silver_searcher \
 rsync \
