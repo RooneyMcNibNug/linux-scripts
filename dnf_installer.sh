@@ -25,6 +25,7 @@ ncdu \
 sysstat \
 keepassxc \
 gtkhash \
+wireguard-tools \
 tor \
 proxychains-ng \
 nmap \
