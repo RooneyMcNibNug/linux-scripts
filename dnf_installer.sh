@@ -20,6 +20,7 @@ clonepath=/home/user/Documents
 TO_INSTALL="gcc \
 gdb \
 curl \
+lynx \
 btop \
 ncdu \
 sysstat \
