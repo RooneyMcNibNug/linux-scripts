@@ -50,6 +50,8 @@ geany \
 idle3 \
 libreoffice \
 evince \
+foliate \
+pandoc \
 pdfgrep \
 ocrmypdf \
 easyeffects \
