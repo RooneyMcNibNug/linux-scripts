@@ -46,6 +46,7 @@ podman \
 peek \
 gedit \
 git \
+codium \
 geany \
 idle3 \
 libreoffice \
@@ -102,7 +103,6 @@ echo ""
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.signal.Signal
 flatpak install -y flathub cc.arduino.arduinoide
-flatpak install -y flathub com.vscodium.codium
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
 flatpak install -y flathub com.makemkv.MakeMKV
@@ -196,8 +196,8 @@ echo "~ Downloading Tor Browser.. ~"
 echo ""
 
 cd $clonepath
-wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz # check for version changes -> https://dist.torproject.org/torbrowser/
-wget https://dist.torproject.org/torbrowser/12.0/tor-browser-linux64-12.0_ALL.tar.xz.asc
+wget v12.0/tor-browser-linux64-12.0.2_ALL.tar.xz # check for version changes -> https://dist.torproject.org/torbrowser/
+wget https://dist.torproject.org/torbrowser/12.0.2/tor-browser-linux64-12.0_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
 chown -R $user tor-browser-linux*
 
