@@ -46,7 +46,6 @@ podman \
 peek \
 gedit \
 git \
-codium \
 geany \
 idle3 \
 libreoffice \
@@ -57,6 +56,7 @@ pdfgrep \
 ocrmypdf \
 easyeffects \
 mpv \
+cdrdao \
 audacious \
 peek \
 scribus \
@@ -102,6 +102,7 @@ echo ""
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.signal.Signal
+flatpak install -y flathub com.vscodium.codium
 flatpak install -y flathub cc.arduino.arduinoide
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
