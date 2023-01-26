@@ -57,7 +57,7 @@ ocrmypdf \
 easyeffects \
 mpv \
 cdrdao \
-audacious \
+abcde \
 peek \
 scribus \
 nvme-cli \
@@ -104,6 +104,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y flathub org.signal.Signal
 flatpak install -y flathub com.vscodium.codium
 flatpak install -y flathub cc.arduino.arduinoide
+flatpak install -y flathub com.github.neithern.g4music
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
 flatpak install -y flathub com.makemkv.MakeMKV
