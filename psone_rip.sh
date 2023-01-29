@@ -53,9 +53,9 @@ done
 # Ripping:
 cd /usr/bin
 if [ "$NOSUBCHAN" = "true" ]; then
-        ./cdrdao read-cd --read-raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc # with subchannel data
+        ./cdrdao read-cd --read-raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc # without subchannel data
     else
-        ./cdrdao read-cd --read-raw --read-subchan rw_raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc # without subchannel data
+        ./cdrdao read-cd --read-raw --read-subchan rw_raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc # with subchannel data
 fi
 
 toc2cue $DIR/$FILE.toc $DIR/$FILE.cue
