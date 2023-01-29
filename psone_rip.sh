@@ -18,7 +18,7 @@ Usage:
 The [filename] is mandatory.
 
 Available parameters:
-  --help      Displays the info here (helps)
+  --help           Displays the info here (helps)
   --no-subchannel  Don't extract any subchannel data. Subchannel data is used for copy protection 
                    on certain games. This looks for it to work correctly, but it may fail if there is none 
                    present, so you can retry and pass this param if you run into any initial issues against a disc.
@@ -41,7 +41,7 @@ fi
 while [ "${1}" != "" ]; do
     if [[ ! -e $DIR ]]; then
        mkdir $DIR
-    elif [ "${1}" = "--nosubchan" ]; then
+    elif [ "${1}" = "--no-subchannel" ]; then
 		NOSUBCHAN="true"
 		shift 2
 	else
@@ -55,7 +55,7 @@ cd /usr/bin
 if [ "$NOSUBCHAN" = "true" ]; then
         ./cdrdao read-cd --read-raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc # with subchannel data
     else
-        ./cdrdao read-cd --read-raw --read-subchan rw_raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc #without subchannel data
+        ./cdrdao read-cd --read-raw --read-subchan rw_raw --datafile $DIR/$FILE.bin --device /dev/sr0 --driver generic-mmc-raw $DIR/$FILE.toc # without subchannel data
 fi
 
 toc2cue $DIR/$FILE.toc $DIR/$FILE.cue
