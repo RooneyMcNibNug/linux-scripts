@@ -44,6 +44,7 @@ emacs \
 bat \
 podman \
 peek \
+binwalk \
 gedit \
 git \
 geany \
