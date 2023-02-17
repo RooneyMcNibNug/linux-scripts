@@ -42,6 +42,7 @@ nano \
 vim \
 emacs \
 bat \
+git-delta \
 podman \
 peek \
 binwalk \
