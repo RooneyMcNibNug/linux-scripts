@@ -2,7 +2,7 @@
 
 ## Dump a Playstation 1 disc into .bin, .cue, and .iso files with linux
 #
-## Requires cdrdao & bchunk packages
+## Requires cdrdao, bchunk & mame-tools packages
 #
 ## You can use something like https://github.com/m35/jpsxdec with jar to
 ## inspect media on the disc afterwards :)
@@ -60,3 +60,6 @@ fi
 
 toc2cue $DIR/$FILE.toc $DIR/$FILE.cue
 bchunk -s -w $DIR/$FILE.bin $DIR/$FILE.cue $DIR/$FILE
+
+# Create a CHD lossy image as well
+for i in $DIR/*.cue; do chdman createcd -i "$i" -o "${i%.*}.chd"; done
