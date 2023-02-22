@@ -70,6 +70,7 @@ the_silver_searcher \
 rsync \
 syncthing \
 qflipper \
+mame-tools \
 dnf-plugins-core"
 
 echo "~ Upgrading current packages via dnf.. ~"
