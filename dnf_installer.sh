@@ -21,6 +21,7 @@ TO_INSTALL="gcc \
 gdb \
 curl \
 lynx \
+w3m \
 btop \
 ncdu \
 sysstat \
