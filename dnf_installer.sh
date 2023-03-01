@@ -43,6 +43,7 @@ nano \
 vim \
 emacs \
 bat \
+fd-find \
 git-delta \
 podman \
 peek \
