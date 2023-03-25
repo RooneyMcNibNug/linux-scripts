@@ -5,12 +5,13 @@
 ## Requires cdrdao, bchunk & mame-tools packages
 #
 ## You can use something like https://github.com/m35/jpsxdec with jar to
-## inspect media on the disc afterwards :)
+## inspect media on the disc afterwards, and dump it to a file. After that,
+## run "binwalk *" on the files and work from there.
 
 export DIR=$HOME/Documents/psx
 
 if [ "$1" == "--help" ]; then
-  echo "Preserve your Playstastion 1 disks! 
+  echo "Preserve your Playstation 1 disks! 
 
 Usage:
   $(basename ${0}) [{--no-subchannel] [{--help}] [filename]
