@@ -32,6 +32,7 @@ tor \
 proxychains-ng \
 nmap \
 tcpdump \
+wget2 \
 ccrypt \
 age \
 firefox \
