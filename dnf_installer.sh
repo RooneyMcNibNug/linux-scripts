@@ -114,7 +114,7 @@ flatpak install -y flathub cc.arduino.arduinoide
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
 flatpak install -y flathub com.makemkv.MakeMKV
-flatpak install -y org.tenacityaudio.Tenacity.flatpakref
+flatpak install -y org.tenacityaudio.Tenacity
 flatpak install -y net.mullvad.MullvadBrowser
 
 echo ""
