@@ -51,6 +51,7 @@ peek \
 binwalk \
 gedit \
 git \
+screen \
 geany \
 idle3 \
 libreoffice \
