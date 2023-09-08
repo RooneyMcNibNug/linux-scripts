@@ -47,6 +47,7 @@ bat \
 fd-find \
 git-delta \
 podman \
+ansible \
 peek \
 binwalk \
 gedit \
@@ -134,15 +135,6 @@ echo ""
 
 wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
 sudo dnf -y install ./dbeaver-ce-latest-stable.x86_64.rpm --skip-broken
-
-echo ""
-echo "~ Finished installing. ~"
-echo "~ Installing Terraform.. ~"
-echo ""
-
-# Install HashiCorp repo then Terraform
-dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
-sudo dnf -y install terraform
 
 echo ""
 echo "~ Finished installing. ~"
