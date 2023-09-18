@@ -134,7 +134,7 @@ echo "~ Finished installing. ~"
 echo "~ Installing dbeaver.. ~"
 echo ""
 
-wget https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
+wget2 https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
 sudo dnf -y install ./dbeaver-ce-latest-stable.x86_64.rpm --skip-broken
 
 echo ""
@@ -188,7 +188,7 @@ echo "~ Installing tomb (Dyne).. ~"
 echo ""
 
 cd $clonepath
-wget https://files.dyne.org/tomb/Tomb-2.9.tar.gz # check for version changes -> https://files.dyne.org/tomb/
+wget2 https://files.dyne.org/tomb/Tomb-2.9.tar.gz # check for version changes -> https://files.dyne.org/tomb/
 tar xvfz Tomb-2.9.tar.gz
 chown -R $user Tomb-2.9
 cd Tomb-2.9
@@ -200,8 +200,8 @@ echo "~ Downloading Tor Browser.. ~"
 echo ""
 
 cd $clonepath
-wget v12.0/tor-browser-linux64-12.0.2_ALL.tar.xz # check for version changes -> https://dist.torproject.org/torbrowser/
-wget https://dist.torproject.org/torbrowser/12.0.2/tor-browser-linux64-12.0_ALL.tar.xz.asc
+# check for version changes -> https://dist.torproject.org/torbrowser/
+wget2 https://dist.torproject.org/torbrowser/12.5.4/tor-browser-linux64-12.5.4_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
 chown -R $user tor-browser-linux*
 
