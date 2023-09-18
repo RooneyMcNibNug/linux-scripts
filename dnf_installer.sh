@@ -118,6 +118,7 @@ flatpak install -y flathub com.mojang.Minecraft
 flatpak install -y flathub com.makemkv.MakeMKV
 flatpak install -y org.tenacityaudio.Tenacity
 flatpak install -y net.mullvad.MullvadBrowser
+flatpak install -y flathub com.discordapp.Discord
 
 echo ""
 echo "~ Finished installing. ~"
