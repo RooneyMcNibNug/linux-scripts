@@ -29,6 +29,7 @@ keepassxc \
 gtkhash \
 wireguard-tools \
 tor \
+onionscan \
 proxychains-ng \
 nmap \
 tcpdump \
