@@ -49,6 +49,8 @@ git-delta \
 podman \
 ansible \
 peek \
+gimp \
+trimage \
 binwalk \
 gedit \
 git \
