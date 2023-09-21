@@ -49,6 +49,8 @@ fd-find \
 git-delta \
 podman \
 ansible \
+gimp \
+trimage \
 peek \
 binwalk \
 gedit \
