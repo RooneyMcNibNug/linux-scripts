@@ -123,7 +123,7 @@ flatpak install -y org.tenacityaudio.Tenacity
 flatpak install -y net.mullvad.MullvadBrowser
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
-flatpak install -y flathub com.github.babluboy.bookworm
+flatpak install -y flathub org.kde.okular
 
 echo ""
 echo "~ Finished installing. ~"
