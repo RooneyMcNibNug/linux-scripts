@@ -123,6 +123,7 @@ flatpak install -y org.tenacityaudio.Tenacity
 flatpak install -y net.mullvad.MullvadBrowser
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
+flatpak install -y flathub com.librumreader.librum
 
 echo ""
 echo "~ Finished installing. ~"
@@ -205,7 +206,7 @@ echo ""
 
 cd $clonepath
 # check for version changes -> https://dist.torproject.org/torbrowser/
-wget2 https://dist.torproject.org/torbrowser/12.5.4/tor-browser-linux64-12.5.4_ALL.tar.xz.asc
+wget2 https://dist.torproject.org/torbrowser/13.0.1/tor-browser-linux64-13.0.1_ALL.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
 chown -R $user tor-browser-linux*
 
