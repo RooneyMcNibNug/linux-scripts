@@ -193,10 +193,10 @@ echo "~ Installing tomb (Dyne).. ~"
 echo ""
 
 cd $clonepath
-wget2 https://files.dyne.org/tomb/Tomb-2.9.tar.gz # check for version changes -> https://files.dyne.org/tomb/
-tar xvfz Tomb-2.9.tar.gz
+wget2 https://files.dyne.org/tomb/Tomb-2.10.tar.gz # check for version changes -> https://files.dyne.org/tomb/
+tar xvfz Tomb-2.10.tar.gz
 chown -R $user Tomb-2.9
-cd Tomb-2.9
+cd Tomb-2.10
 sudo make install
 
 echo ""
