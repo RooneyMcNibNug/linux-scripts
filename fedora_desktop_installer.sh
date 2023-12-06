@@ -163,7 +163,8 @@ git clone https://github.com/asciimoo/wuzz && chown -R $user wuzz && \
 git clone https://github.com/netspooky/pdiff && chown -R $user pdiff && \
 git clone https://github.com/firstlookmedia/dangerzone && chown -R $user dangerzone && \
 git clone https://github.com/svenstaro/miniserve && chown -R $user miniserve && \
-git clone https://github.com/SoptikHa2/desed && chown -R $user desed \
+git clone https://github.com/SoptikHa2/desed && chown -R $user desed && \
+git clone https://github.com/bhavsec/reconspider.git && chown -R $user reconspider \
 
 echo ""
 echo "~ Finished cloning. ~"
