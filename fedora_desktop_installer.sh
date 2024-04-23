@@ -44,6 +44,7 @@ irssi \
 onionshare \
 nano \
 vim \
+python3-pip \
 emacs \
 bat \
 fd-find \
@@ -125,6 +126,7 @@ flatpak install -y net.mullvad.MullvadBrowser
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
 flatpak install -y flathub com.vivaldi.Vivaldi
+flatpak install -y flathub io.dbeaver.DBeaverCommunity
 
 echo ""
 echo "~ Finished installing. ~"
@@ -134,14 +136,6 @@ echo ""
 # Install tools listed at https://mariadb.com/kb/en/mariadb-package-repository-setup-and-usage/
 cd $clonepath
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash && sudo apt-get install -y mariadb-server mariadb-client mariadb-backup
-
-echo ""
-echo "~ Finished installing. ~"
-echo "~ Installing dbeaver.. ~"
-echo ""
-
-wget2 https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm
-sudo dnf -y install ./dbeaver-ce-latest-stable.x86_64.rpm --skip-broken
 
 echo ""
 echo "~ Finished installing. ~"
