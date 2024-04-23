@@ -61,7 +61,7 @@ geany \
 idle3 \
 libreoffice \
 evince \
-foliate \
+calibre \
 pandoc \
 pdfgrep \
 ocrmypdf \
@@ -115,7 +115,7 @@ echo ""
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.signal.Signal
-flatpak install -y flathub com.vscodium.codium
+flatpak install -y fedora org.kde.kate
 flatpak install -y flathub cc.arduino.arduinoide
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
@@ -124,7 +124,7 @@ flatpak install -y org.tenacityaudio.Tenacity
 flatpak install -y net.mullvad.MullvadBrowser
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
-flatpak install -y flathub org.kde.okular
+flatpak install -y flathub com.vivaldi.Vivaldi
 
 echo ""
 echo "~ Finished installing. ~"
