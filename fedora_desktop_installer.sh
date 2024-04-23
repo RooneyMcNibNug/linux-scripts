@@ -208,7 +208,9 @@ echo ""
 
 cd $clonepath
 # check for version changes -> https://dist.torproject.org/torbrowser/
-wget2 https://dist.torproject.org/torbrowser/13.0.1/tor-browser-linux64-13.0.1_ALL.tar.xz.asc
+# Follow https://support.torproject.org/tbb/how-to-verify-signature/ to verify sig
+wget2 https://dist.torproject.org/torbrowser/13.0.14/tor-browser-linux-x86_64-13.0.14.tar.xz
+wget2 https://dist.torproject.org/torbrowser/13.0.14/tor-browser-linux-x86_64-13.0.14.tar.xz.asc
 tar xvf tor-browser-linux*.tar.xz
 chown -R $user tor-browser-linux*
 
