@@ -127,6 +127,7 @@ flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
 flatpak install -y flathub com.vivaldi.Vivaldi
 flatpak install -y flathub io.dbeaver.DBeaverCommunity
+flatpak install -y flathub org.kde.kdenlive
 
 echo ""
 echo "~ Finished installing. ~"
