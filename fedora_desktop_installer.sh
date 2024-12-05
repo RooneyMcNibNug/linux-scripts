@@ -45,7 +45,6 @@ onionshare \
 nano \
 vim \
 python3-pip \
-emacs \
 bat \
 fd-find \
 git-delta \
@@ -78,7 +77,6 @@ vagrant \
 ifuse \
 the_silver_searcher \
 rsync \
-syncthing \
 qflipper \
 mame-tools \
 dnf-plugins-core"
@@ -103,6 +101,15 @@ dnf groupupdate sound-and-video -y
 
 echo ""
 echo "~ Finished installing. ~"
+echo "~ Installing Mullvad Browser via dnf.. ~"
+echo ""
+
+dnf config-manager --add-repo https://repository.mullvad.net/rpm/stable/mullvad.repo
+dnf upgrade -y
+dnf install -y mullvad-browser --skip-broken
+
+echo ""
+echo "~ Finished installing. ~"
 echo "~ Installing magic-wormhole.. ~"
 echo ""
 
@@ -116,18 +123,16 @@ echo ""
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.signal.Signal
-flatpak install -y fedora org.kde.kate
+#flatpak install -y fedora org.kde.kate
 flatpak install -y flathub cc.arduino.arduinoide
 flatpak install -y flathub org.duckstation.DuckStation
 flatpak install -y flathub com.mojang.Minecraft
 flatpak install -y flathub com.makemkv.MakeMKV
 flatpak install -y org.tenacityaudio.Tenacity
-flatpak install -y net.mullvad.MullvadBrowser
 flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
-flatpak install -y flathub com.vivaldi.Vivaldi
-flatpak install -y flathub io.dbeaver.DBeaverCommunity
 flatpak install -y flathub org.kde.kdenlive
+flatpak install -y flathub com.spotify.Client
 
 echo ""
 echo "~ Finished installing. ~"
