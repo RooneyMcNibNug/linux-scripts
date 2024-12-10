@@ -95,16 +95,14 @@ echo ""
 dnf install -y $TO_INSTALL --skip-broken
 
 # Install extra packages for multimedia applications
-dnf groupinstall multimedia -y
-dnf groupupdate multimedia -y
-dnf groupupdate sound-and-video -y
+dnf group install multimedia -y
 
 echo ""
 echo "~ Finished installing. ~"
 echo "~ Installing Mullvad Browser via dnf.. ~"
 echo ""
 
-dnf config-manager --add-repo https://repository.mullvad.net/rpm/stable/mullvad.repo
+dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
 dnf upgrade -y
 dnf install -y mullvad-browser --skip-broken
 
@@ -133,15 +131,6 @@ flatpak install -y flathub com.discordapp.Discord
 flatpak install -y flathub io.github.seadve.Kooha
 flatpak install -y flathub org.kde.kdenlive
 flatpak install -y flathub com.spotify.Client
-
-echo ""
-echo "~ Finished installing. ~"
-echo "~ Installing MariDB/MySQL Toolset.. ~"
-echo ""
-
-# Install tools listed at https://mariadb.com/kb/en/mariadb-package-repository-setup-and-usage/
-cd $clonepath
-curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash && sudo apt-get install -y mariadb-server mariadb-client mariadb-backup
 
 echo ""
 echo "~ Finished installing. ~"
