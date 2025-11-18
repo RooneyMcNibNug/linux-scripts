@@ -25,6 +25,13 @@ sudo pacman -S --noconfirm beets btop calibre cdrdao cups flatpak gimp git ifuse
 
 echo ""
 echo "~ Finished installing. ~"
+echo "~ Installing applications via pipx (Python3).. ~"
+echo ""
+
+sudo yes | pipx install epr-reader rns
+
+echo ""
+echo "~ Finished installing. ~"
 echo "~ Cloning git repos.. ~"
 echo ""
 
