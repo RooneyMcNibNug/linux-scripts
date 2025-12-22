@@ -21,7 +21,7 @@ echo "~ Installing new packages via pacman.. ~"
 echo ""
 
 # Install list of applications
-sudo pacman -S --noconfirm amfora beets btop calibre cdrdao cups flatpak gimp git ifuse jq keepassxc librewolf-bin links magic-wormhole mat2 mullvad-browser-bin nmap obs-studio ocrmypdf okular pdfgrep python-pipx rsync scribus strawberry tenacity tesseract-data-eng tmux tor ufw vim wget yt-dlp
+sudo pacman -S --noconfirm amfora beets btop calibre cdrdao cups flatpak gimp git ifuse jq keepassxc librewolf-bin links lite-xl magic-wormhole mat2 mullvad-browser-bin nmap obs-studio ocrmypdf okular pdfgrep python-pipx rsync scribus strawberry tenacity tesseract-data-eng tmux tor ufw vim wget yt-dlp
 
 echo ""
 echo "~ Finished installing. ~"
